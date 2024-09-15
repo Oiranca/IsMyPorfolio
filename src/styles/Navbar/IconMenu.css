@@ -1,0 +1,41 @@
+.icon_menu_container_closed {
+    display: block;
+    cursor: pointer;
+    padding: 0.20rem;
+    border: solid 2px #e7e5e4;
+    border-radius: 0;
+    transition-property: border-radius;
+    transition-timing-function: ease-out;
+    transition-duration: 500ms;
+    .icon_line_first, .icon_line_second, .icon_line_third {
+        width: 30px;
+        height: 3px;
+        background-color: #e7e5e4;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+}
+
+.icon_menu_container_opened{
+    display: block;
+    cursor: pointer;
+    padding: 0.25rem;
+    border: solid 2px #e7e5e4;
+    border-radius: 100%;
+    transition-property: border-radius;
+    transition-timing-function: ease-out;
+    transition-duration: 500ms;
+
+    .icon_line_first {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .icon_line_second {
+        opacity: 0;
+    }
+
+    .icon_line_third {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}

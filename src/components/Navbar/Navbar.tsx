@@ -1,4 +1,5 @@
 import '../../styles/Navbar/Navbar.css';
+import { MobileMenu } from './components/MobileMenu/MobileMenu.tsx';
 
 export const Navbar = () => {
     return (
@@ -17,6 +18,7 @@ export const Navbar = () => {
                     <a href="#contact">Contacto</a>
                 </li>
             </ul>
+            <MobileMenu />
         </nav>
     );
 };

@@ -12,7 +12,7 @@
         .item_menu, a {
             width: fit-content;
             font-size: larger;
-            color: rgb(231 229 228);
+            color: #e7e5e4;
             border-radius: 0.75rem;
             padding: 0.5rem;
             text-decoration: inherit;
@@ -31,13 +31,16 @@
     }
 }
 
-@media (400px <= width <= 768px) {
-    .navbar_container {
-        .list_menu {
-            .item_menu, a {
-                font-size: medium;
-            }
 
+@media (768px > width ) {
+    .navbar_container {
+        display: flex;
+        justify-content: end;
+        padding: 1rem;
+
+        .list_menu {
+            display: none;
         }
+
     }
 }

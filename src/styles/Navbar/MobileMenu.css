@@ -1,0 +1,5 @@
+@media (768px <= width ) {
+    .mobile_menu_container {
+        display: none;
+    }
+}
