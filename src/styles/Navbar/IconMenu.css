@@ -1,6 +1,8 @@
 .icon_menu_container_closed {
     display: block;
     cursor: pointer;
+    width: fit-content;
+    height: fit-content;
     padding: 0.20rem;
     border: solid 2px #e7e5e4;
     border-radius: 0;

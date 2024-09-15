@@ -1,9 +1,14 @@
 import '../../../../../../styles/Navbar/IconMenu.css';
 import { MouseEvent } from 'react';
 
-export const IconMenu = () => {
+interface IconMenuProps {
+    openMenu: () => void;
+}
+
+export const IconMenu = ({ openMenu }: IconMenuProps) => {
     const menuAction = (event: MouseEvent<HTMLElement>) => {
-        console.log(event.currentTarget.classList.toggle('icon_menu_container_opened'));
+        event.currentTarget.classList.toggle('icon_menu_container_opened');
+        openMenu();
     };
 
     return (
