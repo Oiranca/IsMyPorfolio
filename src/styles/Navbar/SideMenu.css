@@ -1,26 +1,52 @@
 .side_menu_container_closed {
-    display: none;
+    translate: -150vw 0;
+    animation-duration: 750ms;
+    animation-name: menuOut;
 
 }
 
 .side_menu_container_opened {
-    display: inherit;
+    animation-duration: 750ms;
+    animation-name: menuIn;
 
-    .side_list_menu {
-        margin: 0 auto;
-        gap: 0 1rem;
-        list-style: none;
-        padding: 0 1rem;
+}
+.side_list_menu {
+    margin: 0 auto;
+    gap: 0 1rem;
+    list-style: none;
+    padding: 0 1rem;
 
-        .side_item_menu, a {
-            width: fit-content;
-            font-size: larger;
-            color: #e7e5e4;
-            border-radius: 0.75rem;
-            padding: 0.5rem;
-            text-decoration: inherit;
+    .side_item_menu, a {
+        width: fit-content;
+        font-size: larger;
+        color: #e7e5e4;
+        border-radius: 0.75rem;
+        padding: 0.5rem;
+        text-decoration: inherit;
 
-        }
+    }
 
+}
+@keyframes menuIn {
+    from {
+        translate: -150vw 0;
+        scale: 200% 1;
+    }
+
+    to {
+        translate: none;
+        scale: 100% 1;
+    }
+}
+
+@keyframes menuOut {
+    from {
+        translate: none;
+        scale: 100% 1;
+    }
+
+    to {
+        translate: 150vw 0;
+        scale: 200% 1;
     }
 }
