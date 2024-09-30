@@ -5,7 +5,7 @@ export const XIcon = () => {
 
     return (
         <a href="https://x.com/Oiranca" target="_blank" rel="noopener noreferrer">
-            <img className="XIcon" src={x} alt="Link a mi perfil de X anterior twitter" />
+            <img className="xIcon" src={x} alt="Link a mi perfil de X anterior twitter" />
         </a>
     );
 };
