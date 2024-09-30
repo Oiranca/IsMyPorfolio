@@ -1,0 +1,24 @@
+.mobile_menu_container {
+    display: grid;
+    grid-template-columns: 1fr fit-content(100%);
+    grid-template-rows: fit-content(100%) 1fr;
+    width: 100vw;
+    padding: 0.5rem;
+
+    .icon_menu_container_closed, .icon_menu_container_opened {
+        grid-column-start: 2;
+    }
+
+    .side_menu_container {
+        margin: 0 auto;
+        grid-column-end: span 2;
+    }
+
+}
+
+
+@media (768px <= width ) {
+    .mobile_menu_container {
+        display: none;
+    }
+}

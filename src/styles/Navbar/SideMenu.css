@@ -1,0 +1,55 @@
+.side_menu_container_closed {
+    translate: -150vw 0;
+    animation-duration: 750ms;
+    animation-name: menuOut;
+
+}
+
+.side_menu_container_opened {
+    animation-duration: 750ms;
+    animation-name: menuIn;
+
+}
+.side_list_menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 0 1rem;
+    list-style: none;
+    padding: 0 1rem;
+
+    .side_item_menu, a {
+        width: fit-content;
+        font-size: larger;
+        color: #e7e5e4;
+        border-radius: 0.75rem;
+        padding: 0.5rem;
+        text-decoration: inherit;
+
+    }
+
+}
+@keyframes menuIn {
+    from {
+        translate: -150vw 0;
+        scale: 200% 1;
+    }
+
+    to {
+        translate: none;
+        scale: 100% 1;
+    }
+}
+
+@keyframes menuOut {
+    from {
+        translate: none;
+        scale: 100% 1;
+    }
+
+    to {
+        translate: 150vw 0;
+        scale: 200% 1;
+    }
+}
