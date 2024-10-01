@@ -8,6 +8,7 @@
 .side_menu_container_opened {
     animation-duration: 750ms;
     animation-name: menuIn;
+    width: 100%;
 
 }
 .side_list_menu {

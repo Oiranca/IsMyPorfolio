@@ -1,9 +1,9 @@
 .mobile_menu_container {
-    display: grid;
-    grid-template-columns: 1fr fit-content(100%);
-    grid-template-rows: fit-content(100%) 1fr;
-    width: 100vw;
-    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-end;
 
     .icon_menu_container_closed, .icon_menu_container_opened {
         grid-column-start: 2;
