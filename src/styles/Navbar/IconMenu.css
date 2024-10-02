@@ -30,7 +30,7 @@
     transition-duration: 500ms;
 
     .icon_line_first {
-        transform: rotate(-45deg) translate(-5px, 6px);
+        transform: rotate(-45deg) translate(-6px, 6px);
     }
 
     .icon_line_second {
@@ -38,6 +38,6 @@
     }
 
     .icon_line_third {
-        transform: rotate(45deg) translate(-5px, -6px);
+        transform: rotate(45deg) translate(-6px, -6px);
     }
 }

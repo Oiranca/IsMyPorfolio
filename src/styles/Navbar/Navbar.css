@@ -35,10 +35,14 @@
 @media (768px > width ) {
     .navbar_container {
         display: flex;
-        justify-content: end;
         padding: 1rem;
+        width: auto;
+        height: fit-content;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
 
-        .list_menu {
+        .section_menu_desktop {
             display: none;
         }
 

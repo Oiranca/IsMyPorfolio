@@ -11,7 +11,10 @@ export const MobileMenu = () => {
 
     return (
         <nav className="mobile_menu_container">
-            <IconMenu openMenu={isOpen} />
+            <section className="header_menu_mobile">
+                <h2>Software Developer</h2>
+                <IconMenu openMenu={isOpen} />
+            </section>
             <SideMenu isMenuOpen={menuIsOpen} />
         </nav>
     );

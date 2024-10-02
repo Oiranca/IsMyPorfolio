@@ -1,5 +1,6 @@
 import '../../../../../../styles/Navbar/SideMenu.css';
 import { useEffect, useState } from 'react';
+import { SocialNetworks } from '../../../../../SocialNetworks/SocialNetworks.tsx';
 
 interface SideMenuProps {
     isMenuOpen: boolean;
@@ -24,6 +25,9 @@ export const SideMenu = ({ isMenuOpen }: SideMenuProps) => {
                 </li>
                 <li className="side_item_menu">
                     <a href="#contact">Contacto</a>
+                </li>
+                <li className="side_item_menu">
+                    <SocialNetworks />
                 </li>
             </ul>
         </nav>

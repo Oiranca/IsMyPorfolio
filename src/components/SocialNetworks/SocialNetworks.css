@@ -1,0 +1,6 @@
+.socialNetworks {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 0 10rem;
+}
