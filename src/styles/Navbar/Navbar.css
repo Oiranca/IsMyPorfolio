@@ -42,7 +42,7 @@
         flex-wrap: wrap;
         justify-content: flex-end;
 
-        .list_menu {
+        .section_menu_desktop {
             display: none;
         }
 

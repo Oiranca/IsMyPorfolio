@@ -5,6 +5,19 @@
     flex-wrap: wrap;
     align-items: flex-end;
 
+    .header_menu_mobile {
+        display: grid;
+        grid-template-columns:  1fr fit-content(100%);
+        width: 100%;
+        align-items: center;
+
+        h2 {
+            color: #e7e5e4;
+            margin: 0;
+            text-align: center;
+        }
+    }
+
     .icon_menu_container_closed, .icon_menu_container_opened {
         grid-column-start: 2;
     }
