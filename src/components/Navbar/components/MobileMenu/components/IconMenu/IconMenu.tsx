@@ -1,4 +1,4 @@
-import '../../../../../../styles/Navbar/IconMenu.css';
+import '../../../../../../styles/Navbar/MobileMenu/IconMenu/IconMenu.css';
 import { MouseEvent } from 'react';
 
 interface IconMenuProps {

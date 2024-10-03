@@ -1,0 +1,14 @@
+.socialNetworks {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 0 10rem;
+
+    .xIcon:hover, .linkedinIcon:hover, .githubIcon:hover {
+        box-shadow: 0 0 20px #e7e5e4;
+        scale: 1.1;
+        transition-property: box-shadow,scale ;
+        transition-timing-function: linear;
+        transition-duration: 50ms;
+    }
+}

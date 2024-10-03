@@ -1,4 +1,4 @@
-import './GithubIcon.css';
+import '../../../../../../styles/Navbar/SocialNetworks/GithubIcon/GithubIcon.css';
 
 export const GithubIcon = () => {
     const github = 'public/social/github_logo_black.png';

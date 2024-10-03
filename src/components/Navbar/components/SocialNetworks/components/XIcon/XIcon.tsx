@@ -1,4 +1,4 @@
-import './XIcon.css';
+import '../../../../../../styles/Navbar/SocialNetworks/XIcon/XIcon.css';
 
 export const XIcon = () => {
     const x = 'public/social/X_logo.png';
