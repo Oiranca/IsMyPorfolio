@@ -1,4 +1,4 @@
-import './LinkedinIcon.css';
+import '../../../../../../styles/Navbar/SocialNetworks/LinkedinIcon/LinkedinIcon.css';
 
 export const LinkedinIcon = () => {
     const linkedin = 'public/social/linkedin_logo.png';

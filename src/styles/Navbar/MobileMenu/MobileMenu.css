@@ -3,7 +3,6 @@
     flex-direction: column;
     width: 100%;
     flex-wrap: wrap;
-    align-items: flex-end;
 
     .header_menu_mobile {
         display: grid;

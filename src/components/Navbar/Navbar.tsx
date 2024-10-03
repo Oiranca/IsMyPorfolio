@@ -1,6 +1,6 @@
 import '../../styles/Navbar/Navbar.css';
 import { MobileMenu } from './components/MobileMenu/MobileMenu.tsx';
-import { SocialNetworks } from '../SocialNetworks/SocialNetworks.tsx';
+import { SocialNetworks } from './components/SocialNetworks/SocialNetworks.tsx';
 
 export const Navbar = () => {
     return (
