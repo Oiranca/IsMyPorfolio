@@ -7,6 +7,7 @@
     .header_menu_mobile {
         display: grid;
         grid-template-columns:  1fr fit-content(100%);
+        grid-template-rows:  fit-content(100%) fit-content(100%);
         width: 100%;
         align-items: center;
 
@@ -19,11 +20,13 @@
 
     .icon_menu_container_closed, .icon_menu_container_opened {
         grid-column-start: 2;
+
     }
 
     .side_menu_container {
         margin: 0 auto;
         grid-column-end: span 2;
+
     }
 
 }

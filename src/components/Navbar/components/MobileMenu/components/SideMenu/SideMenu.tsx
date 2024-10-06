@@ -1,6 +1,6 @@
-import '../../../../../../styles/Navbar/MobileMenu/SideMenu/SideMenu.css';
 import { useEffect, useState } from 'react';
 import { SocialNetworks } from '../../../SocialNetworks/SocialNetworks.tsx';
+import '../../../../../../styles/Navbar/MobileMenu/SideMenu/SideMenu.css';
 
 interface SideMenuProps {
     isMenuOpen: boolean;
