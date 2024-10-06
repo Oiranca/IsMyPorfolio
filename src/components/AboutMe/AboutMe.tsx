@@ -1,20 +1,16 @@
 import '../../styles/AboutMe/AboutMe.css';
+
 export const AboutMe = () => {
     const avatar = 'avatar/Avatar.jpeg';
     return (
-        <div
-            className="AboutMe"
-            // className='grid grid-flow-row auto-rows-max justify-items-center content-evenly p-2 text-black text-lg md:text-xl lg:grid-cols-aboutMe-lg 2xl:w-11/12 3xl:w-2/3 '
-        >
+        <div className="AboutMe">
             <img
-                className="avatar order-1 lg:order-2 rounded-full w-40 h-40 md:w-18 md:h-18 lg:rounded-[4rem] lg:mt-6 lg:w-auto lg:h-auto lg:max-w-[300px] xl:mt-2 p-2"
+                className="avatar"
                 src={avatar}
                 alt="Imagen creada por Bing de Microsoft donde se ve un chico tecleando con un fondo donde se ve la playa"
             />
-            <h1 className="title order-2 text-4xl font-bold p-2 lg:order-1 lg:col-span-full lg:text-6xl">
-                Sobre mí
-            </h1>
-            <section className="order-3 flex flex-col font-semibold text-md text-justify p-1">
+            <h1 className="title ">Sobre mí</h1>
+            <section className="body-about-me">
                 <p className="indent-8 p-2">
                     Soy una persona curiosa, que le gusta estar siempre investigando,
                     autodidacta..., pero tengo que admitir que donde esté un buen equipo en el que
