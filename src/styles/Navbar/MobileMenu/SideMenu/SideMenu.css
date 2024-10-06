@@ -11,14 +11,18 @@
     width: 100%;
 
 }
+
 .side_list_menu {
+    position: fixed;
+    left: 1.5rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    gap: 0 1rem;
     list-style: none;
-    padding: 0 1rem;
+    padding: 0;
+    background-color: #000000;
+
 
     .side_item_menu, a {
         text-align: center;
@@ -27,7 +31,8 @@
         border-radius: 0.75rem;
         padding: 0.5rem;
         text-decoration: inherit;
-        .socialNetworks{
+
+        .socialNetworks {
             width: fit-content;
             display: flex;
             justify-content: center;
@@ -37,6 +42,7 @@
     }
 
 }
+
 @keyframes menuIn {
     from {
         translate: -150vw 0;
