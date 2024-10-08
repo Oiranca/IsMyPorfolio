@@ -34,13 +34,12 @@
         color: #e7e5e4;
 
         .experience-item {
+            width: 30%;
             padding: 0.5rem;
             text-align: center;
-            border-width: 2px;
-            border-style: solid;
-            border-image-slice: 1;
-            border-image-source: linear-gradient(90deg, rgba(93, 32, 133, 0.87718837535014) 65%, rgba(2, 0, 36, 1) 130%);
-            width: fit-content;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-bottom-color: rgba(93, 32, 133, 0.87718837535014);
 
             .title-item {
                 margin: 0.5rem 0;
@@ -111,6 +110,8 @@
             font-size: 1.25rem;
 
             .experience-item {
+                width: auto;
+
                 .title-item {
                     font-size: 1.75rem;
                 }
