@@ -1,4 +1,5 @@
 import '../../styles/Experience/Experience.css';
+import { experience } from '../../data/experience.ts';
 
 export const Experience = () => {
     const icon = 'experience/experience.png';
@@ -14,34 +15,31 @@ export const Experience = () => {
 
             </header>
             <article className="experience-body">
-                <section className="experience-item">
-                    <header>
-                        <img src="public/experience/auj-logo.png" alt="Logo de la Asociación Adoptaun Un Junior" />
-                        <h3 className="title-item">
-                            #AdoptaUnJunior
-                        </h3>
-                    </header>
-                    <section>
-                        <p className="description-item">
-                            Desarrollador Frontend voluntario en la Asociación AdoptaUnJunior </p>
+                {experience.map((item) => (
+                    <section className="experience-item" key={item.title}>
+                        <header>
+                            <img src={item.logo} alt={`Logo de ${item.title}`} />
+                            <h3 className="title-item">
+                                {item.title}
+                            </h3>
+                        </header>
+                        <section>
+                            <p className="description-item">
+                                {item.description}
+                            </p>
+                        </section>
+                        <footer>
+                            <ul className="list-technologies">
+                                {item.technologies.map((technology) => (
+                                    <li key={technology} className="technology-item">
+                                        {technology}
+                                    </li>
+                                ))}
+
+                            </ul>
+                        </footer>
                     </section>
-                    <footer>
-                        <ul className="list-technologies">
-                            <li className='technologies-item'>
-                                React
-                            </li>
-                            <li className='technologies-item'>
-                                Next.js
-                            </li>
-                            <li className='technologies-item'>
-                                TypeScript
-                            </li>
-                            <li className='technologies-item'>
-                                TailwindCSS
-                            </li>
-                        </ul>
-                    </footer>
-                </section>
+                ))}
             </article>
         </div>
     );
