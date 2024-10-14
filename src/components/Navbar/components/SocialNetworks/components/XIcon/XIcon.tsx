@@ -1,7 +1,7 @@
 import '../../../../../../styles/Navbar/SocialNetworks/XIcon/XIcon.css';
 
 export const XIcon = () => {
-    const x = 'public/social/X_logo.png';
+    const x = 'social/X_logo.png';
 
     return (
         <a href="https://x.com/Oiranca" target="_blank" rel="noopener noreferrer">
