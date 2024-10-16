@@ -1,7 +1,10 @@
 .side_menu_container_closed {
-    translate: -150vw 0;
+    transform: translateY(-100vh);
     animation-duration: 750ms;
     animation-name: menuOut;
+    position: fixed;
+    left: -0.2rem;
+
 
 }
 
@@ -9,18 +12,19 @@
     animation-duration: 750ms;
     animation-name: menuIn;
     width: 100%;
+    position: fixed;
+    left: -0.2rem;
+    top:5rem;
 
 }
 
 .side_list_menu {
-    position: fixed;
-    left: 1.5rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
     list-style: none;
-    padding: 0;
+    padding: 1rem;
     background-color: #000000;
 
 
@@ -45,24 +49,18 @@
 
 @keyframes menuIn {
     from {
-        translate: -150vw 0;
-        scale: 200% 1;
+        transform: translatey(-100vh) scaley(2);
     }
-
     to {
-        translate: none;
-        scale: 100% 1;
+        transform: translatey(0) scaley(1);
     }
 }
 
 @keyframes menuOut {
     from {
-        translate: none;
-        scale: 100% 1;
+        transform: translatey(0) scaley(1);
     }
-
     to {
-        translate: 150vw 0;
-        scale: 200% 1;
+        transform: translatey(-100vh) scaley(2);
     }
 }
