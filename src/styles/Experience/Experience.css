@@ -118,6 +118,9 @@
             .title {
                 font-size: 2rem;
             }
+            .experience-icon{
+                display: none;
+            }
         }
 
         .experience-body {
