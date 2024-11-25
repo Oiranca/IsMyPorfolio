@@ -1,8 +1,7 @@
 import '../../../../../../styles/Navbar/SocialNetworks/LinkedinIcon/LinkedinIcon.css';
+import linkedin from './assets/linkedin_logo.png';
 
 export const LinkedinIcon = () => {
-    const linkedin = 'public/social/linkedin_logo.png';
-
     return (
         <a
             href="https://www.linkedin.com/in/samuel-romero-arbelo/"
